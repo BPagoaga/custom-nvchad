@@ -1,3 +1,3 @@
 require "custom.colors"
-require "custom.mappings"
+require "custom.primeagen-mappings"
 require "custom.options"
