@@ -53,4 +53,20 @@ M.nvimtree = {
   },
 }
 
+M.statusline = {
+    theme = "vscode_colored", -- default/vscode/vscode_colored/minimal
+    -- default/round/block/arrow separators work only for default statusline theme
+    -- round and block will work for minimal theme only
+    -- separator_style = "round",
+    -- modules arg here is the default table of modules
+    overriden_modules = function(modules)
+
+     modules[2] = (function()
+      local fn = vim.fn
+       local filename = (fn.expand "%" == "" and "Empty ") or fn.expand "%:."
+          return filename 
+      end)()    
+     end,
+     }
+
 return M
