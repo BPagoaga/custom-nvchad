@@ -33,6 +33,7 @@ M.mason = {
     "deno",
     "prettierd",
     "eslint-lsp",
+    "tailwindcss-language-server",
   },
 }
 
