@@ -64,8 +64,8 @@ M.statusline = {
      modules[2] = (function()
       local fn = vim.fn
        local filename = (fn.expand "%" == "" and "Empty ") or fn.expand "%:."
-          return filename 
-      end)()    
+          return filename
+      end)()
      end,
      }
 
