@@ -53,6 +53,10 @@ M.nvimtree = {
   },
 }
 
+M.telescope = {
+  extension_list = {"file_browser"}
+}
+
 M.statusline = {
     theme = "vscode_colored", -- default/vscode/vscode_colored/minimal
     -- default/round/block/arrow separators work only for default statusline theme
